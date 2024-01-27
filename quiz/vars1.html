@@ -5,9 +5,9 @@
             let x = 1;
             var y = 2;
             {
+                let y = 2; // moved from after console.log to before because let vars are only available in the block that they're defined.
                 y = y + 1;
                 console.log(x+y);
-                let y = 2;
             }
             console.log(x);
             console.log(y);
