@@ -1,18 +1,16 @@
 <html>
-    <head>
-        <script>
-            // Fix all errors in the code below
-            const PI = 3.14159;
-            {
-                let radius = 5;
-                let area = PI * radius * radius;
-                PI = 3.0;
-            }
-            console.log(area);
-
-        </script>
-    </head>
-    <body>
-        <h1> A Web Page </h1>
-    </body>
+  <head>
+    <script>
+      let PI = 3.14159; // changed from var to let to allow mutation on line 9
+      {
+        let radius = 5;
+        let area = PI * radius * radius;
+        PI = 3.0;
+        console.log(area); // moved inside braces
+      }
+    </script>
+  </head>
+  <body>
+    <h1>A Web Page</h1>
+  </body>
 </html>
