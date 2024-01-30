@@ -12,4 +12,4 @@ const obj1 = {
   errMsg: "Error!",
 };
 
-logger.logMsg(obj1);
+logger.logMsg.call(obj1);
