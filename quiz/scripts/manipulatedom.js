@@ -13,6 +13,7 @@ function createTRNode(colNodes) {
 function createTDNode(childNode) {
   let tdNode = document.createElement("td");
   tdNode.appendChild(childNode);
+  tdNode.classList = 'tdNode'
   return tdNode;
 }
 
